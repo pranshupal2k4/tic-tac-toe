@@ -76,7 +76,9 @@ const checkWinner = () => {
         const allBoxes = [...boxes].every((box) => box.innerText !== "");
         if (allBoxes) {
             msgContainer.classList.remove('hide');
+            console.log();
             msg.innerText = 'Match Drawn';
+            console.log();
         }
     }
 };
@@ -90,3 +92,4 @@ const resetGame = () => {
 newGameBtn.addEventListener('click', resetGame);
 
 resetBtn.addEventListener('click', resetGame);
+
