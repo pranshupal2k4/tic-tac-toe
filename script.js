@@ -50,7 +50,9 @@ const disableBoxes = () => {
 };
 
 const showWinner = (winner) => {
+    console.log();
     msg.innerText = `Congratulations, Winner is ${winner}`;
+    console.log();
     msgContainer.classList.remove('hide');
     disableBoxes();
 };
@@ -86,4 +88,5 @@ const resetGame = () => {
 };
 
 newGameBtn.addEventListener('click', resetGame);
+
 resetBtn.addEventListener('click', resetGame);
